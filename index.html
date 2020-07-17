@@ -10,84 +10,42 @@
 	</head>
 	<body>
 		<section>
-			<nav id="menu">
+			<nav id="navbar">
 				<ul>
-					<li class="menuItem"><a href="#portfolio">portfolio</a></li>
+					<li class="menuItem"><a href="#projects">portfolio</a></li>
 					<li class="menuItem"><a href="https://goingdev.blogspot.com/">blog</a></li>
 		 			<li class="menuItem"><a href="#bio">bio</a></li>
 					<li class="menuItem"><a href="#contact">contact</a></li>
 					<a onclick="myFunction()" class="navbuttons"><i class="fas fa-adjust"></i></a>
 				</ul>
-			<script>
-				function myFunction() {
-		   		    let element = document.body;
-		   		    element.classList.toggle("dark-mode");
-				};
-			</script>
 		</section>
 		<header>
 			<h1>Aaron Aguerrevere<h1>
-		</header>
-			<div class="welcome">
-				<img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1007&q=80" alt="macbook pro" style="width: 100%;">
-				<div class="top-center">Thanks for stoping by! While I work on this site, please visit me on <a href="https://www.linkedin.com/in/aaag/" target="_blank" id="Lnkdn">Linkedin ></a>
-				</div>
-			</div>
+        </header>
+        
+		<div id="welcome-section">
+			<h1 class="top-center">Thanks for stoping by! While I work on this site, please visit me on <a href="https://www.linkedin.com/in/aa-ag/" target="_blank" id="Lnkdn">Linkedin ></h1>
+        </div>
+
 		<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
-		<script>
-			var mybutton = document.getElementById("myBtn");
-			window.onscroll = function() {scrollFunction()};
-			function scrollFunction() {
-				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-					mybutton.style.display = "block";
-			}	else {
-					mybutton.style.display = "none";
-				}
-			}
-			function topFunction() {
-				document.body.scrollTop = 0;
-				document.documentElement.scrollTop = 0;
-			}
-		</script>
-		<article>
-			<h2 class="subsection" id="portfolio">Portfolio</h2>
-			<p>You could say that I'm only getting started. However, by some miracle I already have to clients that asked me to help them with their websites. It's still work in progress, you can take a look:</p>
-			<div style="overflow-x:auto;">
-				<table>
-					<thead>
-						<tr>
-							<th>Client</th>
-							<th>About</th>
-							<th>Tech</th>
-							<th>Visit</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<th>Ridge Paragon</th>
-							<td>Accounting firm</td>
-							<td>Wordpress</td>
-							<td><a href="https://www.ridgeparagon.com/">ridgeparagon.com/</a></td>
-						</tr>
-						<tr>
-							<th>Espacio Azul</th>
-							<td>Interior design</td>
-							<td>Wordpress</td>
-							<td><a href=https://interiorismoyenergia.wordpress.com/>espacioazul.com</a></td>
-						</tr>
-					</tbody>
-				</table><br>
-			</div>
-		</article>
-		<article>
-			<h3 class="subsection" id="bio">Bio</h3>
-			<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="inside a pc" style="width: 100%;">
-			<p><i>Background</i>: Venezuelan laywer & PPE, failed entrepreneur, failed marketer and failed social media community manager.</p>
-			<p><i>Hobbies</i>: food, books, and did I mention food already?</p>
-			<p><i>Why code?</i>: to build cool stuff.</p>
-		</article>
-		<article>
-			<h4 class="subsection" id="contact">Contact</h4>
+        
+        <section id="projects">
+			<h2 class="subsection">Portfolio</h2>
+            <div class="project-tile">
+                <h6>Weather App API</h6>
+                <p>Check this <a id="profile-link" href="https://github.com/aa-ag/weather_app" target="_blank">repo</a></p>
+            </div>
+            <div class="project-tile">
+                <h6>Chrome Extension</h6>
+                <p>Check this <a id="profile-link" href="https://github.com/aa-ag/About_Time" target="_blank">repo</a></p>
+            </div>
+            <div class="project-tile">
+                <h6>Profanity Checker</h6>
+                <p>Check this <a id="profile-link" href="https://github.com/aa-ag/pg13" target="_blank">repo</a></p>
+            </div>
+		</section>
+		<div>
+		<h4 class="subsection" id="contact">Contact</h4>
 		<form class="container">
 				<fieldset>
 					<legend>Subscribe to my newsletter</legend>
@@ -110,8 +68,9 @@
 					<div class="calendly-inline-widget" data-url="https://calendly.com/aaron-a/15min?primary_color=6b8ca0" id="scheduler"></div>
 					<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
 				</fieldset>
-			</form><br>
-	<!-- 		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcCt8UX-kiaMko6hKt4i6LxSfP-KEAsj6qmLsimtEWBUhUDg/viewform?embedded=true" width="640" height="1055" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
+            </form><br>
+        </div>
+	    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcCt8UX-kiaMko6hKt4i6LxSfP-KEAsj6qmLsimtEWBUhUDg/viewform?embedded=true" width="640" height="1055" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
 		</article> -->
 		<section id="socialnav">
 			<nav>
@@ -123,8 +82,9 @@
 				<a href="https://stackoverflow.com/users/12908779/aaron-a" target="_blank" class="social">stackoverflow</a>
 			</nav>
 		</section><br>
-	</body>
 	<footer>
 		<p>&#169 2020</p>
-	</footer>
+    </footer>
+    <script src="/javascript/main.js"></script>
+</body>
 </html>
